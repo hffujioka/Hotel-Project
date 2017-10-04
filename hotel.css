@@ -1,0 +1,32 @@
+/*This is my CSS file*/
+body {
+  background-image: url(http://s1.picswalls.com/wallpapers/2016/06/06/hd-beach-wallpaper_090612883_305.jpg);
+  background-size: cover;
+}
+#roomOne {
+  width: 250px;
+  background-color: rgba(255,0,0,0.8);
+  float: left;
+  margin: 0px 20px 0px 20px;
+}
+
+#roomTwo {
+  width: 250px;
+  background-color: rgba(255,255,0,0.8);
+  float: left;
+  margin: 0px 20px 0px 20px;
+}
+
+#roomThree {
+  width: 250px;
+  background-color: rgba(0,255,255,0.8);
+  float: left;
+  margin: 0px 20px 0px 20px;
+}
+
+#roomFour {
+  width: 250px;
+  background-color: rgba(0,255,0,0.8);
+  float: left;
+  margin: 0px 20px 0px 20px;
+}
