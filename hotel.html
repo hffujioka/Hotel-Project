@@ -1,47 +1,68 @@
 <html>
   <head>
-    <script src="hotel.js"></script>
-    <link rel="stylesheet" href="hotel.css" type="text/css">
+    <script src="hotelCopy.js"></script>
+    <link rel="stylesheet" href="hotelCopy.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ribeye+Marrow" rel="stylesheet">
   </head>
   <body>
     <!--Room One-->
-    <div id="roomOne">
-      <h1>Room One</h1>
-      <p>Guest Name</p>
-      <input type="text" id="addOne" onkeypress="addGuestOne()">
-      <p>Remove guest by number</p>
-      <input type="number" id="removeOne" onkeypress="checkOutOne()">
-      <ol></ol>
+    <div id="roomOne" class="div">
+      <h1 class="roomName">Room One</h1>
+      <p class="words">Guest Name</p>
+      <input type="text" id="addOne" class="input" onkeypress="addGuestOne()">
+      <p class="words">Remove guest by number</p>
+      <select id="dropdownListOne" class="dropdown" onchange="checkOutOne();">
+        <option>Select a number:</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <ol id="listOne"></ol>
     </div>
     
     <!--Room Two-->
-    <div id="roomTwo">
-      <h1>Room Two</h1>
-      <p>Guest name</p>
-      <input type="text" id="addTwo" onkeypress="addGuestTwo()">
-      <p>Remove guest by number</p>
-      <input type="number" id="removeTwo" onkeypress="checkOutTwo()">
-      <ol></ol>
+    <div id="roomTwo" class="div">
+      <h1 class="roomName">Room Two</h1>
+      <p class="words">Guest name</p>
+      <input type="text" id="addTwo" class="input" onkeypress="addGuestTwo()">
+      <p class="words">Remove guest by number</p>
+      <select id="dropdownListTwo" class="dropdown" onchange="checkOutTwo();">
+        <option>Select a number:</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <ol id="listTwo"></ol>
     </div>
     
     <!--Room Three-->
-    <div id="roomThree">
-      <h1>Room Three</h1>
-      <p>Guest name</p>
-      <input type="text" id="addThree" onkeypress="addGuestThree()">
-      <p>Remove guest by number</p>
-      <input type="number" id="removeThree" onkeypress="checkOutThree()">
-      <ol></ol>
+    <div id="roomThree" class="div">
+      <h1 class="roomName">Room Three</h1>
+      <p class="words">Guest name</p>
+      <input type="text" id="addThree" class="input" onkeypress="addGuestThree()">
+      <p class="words">Remove guest by number</p>
+      <select id="dropdownListThree" class="dropdown" onchange="checkOutThree();">
+        <option>Select a number:</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <ol id="listThree"></ol>
     </div>
     
     <!--Room Four-->
-    <div id="roomFour">
-      <h1>Room Four</h1>
-      <p>Guest name</p>
-      <input type="text" id="addFour" onkeypress="addGuestFour()">
-      <p>Remove guest by number</p>
-      <input type="number" id="removeFour" onkeypress="checkOutFour()">
-      <ol></ol>
+    <div id="roomFour" class="div">
+      <h1 class="roomName">Room Four</h1>
+      <p class="words">Guest name</p>
+      <input type="text" id="addFour" class="input" onkeypress="addGuestFour()">
+      <p class="words">Remove guest by number</p>
+      <select id="dropdownListFour" class="dropdown" onchange="checkOutFour();">
+        <option>Select a number:</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <ol id="listFour"></ol>
     </div>
     
     

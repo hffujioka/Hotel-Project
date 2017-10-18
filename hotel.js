@@ -6,80 +6,84 @@ var guestsNumberFour = 0;
 
 //JS for Room One//
 function addGuestOne() {
-  if ((guestsNumberOne<=2) && (window.event.keyCode == 13)) {
+  if ((guestsNumberOne < 3) && (window.event.keyCode == 13)) {
     guestsNumberOne++;
     var guestName = document.getElementById('addOne').value;
     var newListItem = document.createElement('li');
     var newGuest = document.createTextNode(guestName);
     newListItem.appendChild(newGuest);
-    var position = document.getElementsByTagName('ol')[0];
-    position.appendChild(newListItem);
+    var element = document.getElementById('listOne');
+    element.appendChild(newListItem);
     }
   }
 function checkOutOne() {
-  var removeGuest = document.getElementById('removeOne').value;
-  var removeItem = document.getElementsByTagName('li')[removeGuest-1];
-  var containerElement = removeItem.parentNode;
-  containerElement.removeChild(removeItem);
+  var number = document.getElementById('dropdownListOne').value;
+  var parent = document.getElementById('listOne');
+  var child = document.getElementsByTagName('li');
+  parent.removeChild(parent.childNodes[number-1]);
+  document.getElementById('dropdownListOne').selectedIndex = "0";
   guestsNumberOne--;
 }
 
 //JS for Room Two//
 function addGuestTwo() {
-  if ((guestsNumberTwo <= 2) && (window.event.keyCode == 13)) {
+  if ((guestsNumberTwo < 3) && (window.event.keyCode == 13)) {
     guestsNumberTwo++;
     var guestName = document.getElementById('addTwo').value;
     var newListItem = document.createElement('li');
     var newGuest = document.createTextNode(guestName);
     newListItem.appendChild(newGuest);
-    var position = document.getElementsByTagName('ol')[1];
-    position.appendChild(newListItem);
+    var element = document.getElementById('listTwo');
+    element.appendChild(newListItem);
   }
 }
 function checkOutTwo() {
-  var removeGuest = document.getElementById('removeTwo').value;
-  var removeItem = document.getElementsByTagName('li')[removeGuest-1];
-  var containerElement = removeItem.parentNode;
-  containerElement.removeChild(removeItem);
+  var number = document.getElementById('dropdownListTwo').value;
+  var parent = document.getElementById('listTwo');
+  var child = document.getElementsByTagName('li');
+  parent.removeChild(parent.childNodes[number-1]);
+  document.getElementById('dropdownListTwo').selectedIndex = "0";
   guestsNumberTwo--;
 }
 
 //JS for Room Three//
 function addGuestThree() {
-  if ((guestsNumberThree <= 2) && (window.event.keyCode == 13)) {
+  if ((guestsNumberThree < 3) && (window.event.keyCode == 13)) {
     guestsNumberThree++;
     var guestName = document.getElementById('addThree').value;
     var newListItem = document.createElement('li');
     var newGuest = document.createTextNode(guestName);
     newListItem.appendChild(newGuest);
-    var position = document.getElementsByTagName('ol')[2];
-    position.appendChild(newListItem);
+    var element = document.getElementById('listThree');
+    element.appendChild(newListItem);
   }
 }
 function checkOutThree() {
-  var removeGuest = document.getElementById('removeThree').value;
-  var removeItem = document.getElementsByTagName('li')[removeGuest-1];
-  var containerElement = removeItem.parentNode;
-  containerElement.removeChild(removeItem);
+  var number = document.getElementById('dropdownListThree').value;
+  var parent = document.getElementById('listThree');
+  var child = document.getElementsByTagName('li');
+  parent.removeChild(parent.childNodes[number-1]);
+  document.getElementById('dropdownListThree').selectedIndex = "0";
   guestsNumberThree--;
 }
 
 //JS for Room Four//
 function addGuestFour() {
-  if ((guestsNumberFour <= 2) && (window.event.keyCode == 13)) {
+  if ((guestsNumberFour < 3) && (window.event.keyCode == 13)) {
     guestsNumberFour++;
     var guestName = document.getElementById('addFour').value;
     var newListItem = document.createElement('li');
     var newGuest = document.createTextNode(guestName);
     newListItem.appendChild(newGuest);
-    var position = document.getElementsByTagName('ol')[3];
-    position.appendChild(newListItem);
+    var element = document.getElementById('listFour');
+    element.appendChild(newListItem);
   }
 }
 function checkOutFour() {
-  var removeGuest = document.getElementById('removeFour').value;
-  var removeItem = document.getElementsByTagName('li')[removeGuest-1];
-  var containerElement = removeItem.parentNode;
-  containerElement.removeChild(removeItem);
-  guestsNumberFour--;
+  var number = document.getElementById('dropdownListFour').value;
+  var parent = document.getElementById('listFour');
+  var child = document.getElementsByTagName('li');
+  parent.removeChild(parent.childNodes[number-1]);
+  document.getElementById('dropdownListFour').selectedIndex = "0";
+  guestsNumberThree--;
 }
